@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .sticky {
+        @apply fixed top-0 bg-white z-[300] right-0 left-0
+    }
+}
