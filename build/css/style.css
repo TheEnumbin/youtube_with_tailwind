@@ -668,6 +668,20 @@ video {
   flex: 1 1 0%;
 }
 
+@keyframes sticky-header {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-sticky-header {
+  animation: sticky-header 0.3s ease-in;
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
