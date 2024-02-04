@@ -16,8 +16,14 @@
             </div>
             <div class="w-[350px] lg:w-[500px] md:w-[350px] mt-2 sm:mt-0 flex flex-row justify-center items-center">
                 <input class=" border-zinc-400 border-[1px] flex-1 h-[40px] px-[6px]" placeholder="Search">
-                <button class=" bg-whitesmoke h-[40px] px-[20px] border-zinc-400 border-[1px] mr-[10px] -ml-[1px]"><img class="h-[25px]" src="icons/search.svg"></button>
-                <button class="rounded-full bg-whitesmoke p-[8px] border-0"><img class="h-6" src="icons/voice-search-icon.svg"></button>
+                <button class=" bg-whitesmoke h-[40px] px-[20px] border-zinc-400 border-[1px] mr-[10px] -ml-[1px] relative group flex flex-col items-center justify-center">
+                  <img class="h-[25px]" src="icons/search.svg">
+                  <span class="absolute p-1 bg-zinc-600 text-white text-xs -bottom-[30px] rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Search</span>
+                </button>
+                <button class="rounded-full bg-whitesmoke p-[8px] border-0 flex flex-col items-center justify-center group relative">
+                  <img class="h-6" src="icons/voice-search-icon.svg">
+                  <span class="absolute p-1 bg-zinc-600 text-white text-xs -bottom-[30px] rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Search  with your voice</span>
+                </button>
             </div>
 
             <div class="flex items-center justify-between w-[180px] mr-5  mt-2 sm:mt-0 ">
@@ -31,27 +37,27 @@
 
     <div class="flex flex-row ">
         <div class="w-[72px]">
-            <div class="h-[74px] flex flex-col justify-center items-center">
+            <div class="h-[74px] flex flex-col justify-center items-center hover:bg-zinc-300 cursor-pointer">
               <img class="h-6 mb-1" class="h-6 mb-1" src="icons/home.svg">
               <div class="text-[10px] text-center">Home</div>
             </div>
-            <div class="flex flex-col justify-center items-center h-[74px] ">
+            <div class="flex flex-col justify-center items-center h-[74px]  hover:bg-zinc-300 cursor-pointer">
               <img class="h-6 mb-1" src="icons/explore.svg">
               <div class="text-[10px] text-center">Explore</div>
             </div>
-            <div class="flex flex-col justify-center items-center h-[74px] ">
+            <div class="flex flex-col justify-center items-center h-[74px]  hover:bg-zinc-300 cursor-pointer">
               <img class="h-6 mb-1" src="icons/subscriptions.svg">
               <div class="text-[10px] text-center">Subscriptions</div>
             </div>
-            <div class="flex flex-col justify-center items-center h-[74px] ">
+            <div class="flex flex-col justify-center items-center h-[74px]  hover:bg-zinc-300 cursor-pointer">
               <img class="h-6 mb-1" src="icons/originals.svg">
               <div class="text-[10px] text-center">Originals</div>
             </div>
-            <div class="flex flex-col justify-center items-center h-[74px] ">
+            <div class="flex flex-col justify-center items-center h-[74px]  hover:bg-zinc-300 cursor-pointer">
               <img class="h-6 mb-1" src="icons/youtube-music.svg">
               <div class="text-[10px] text-center">YouTube Music</div>
             </div>
-            <div class="flex flex-col justify-center items-center h-[74px] ">
+            <div class="flex flex-col justify-center items-center h-[74px]  hover:bg-zinc-300 cursor-pointer">
               <img class="h-6 mb-1" src="icons/library.svg">
               <div class="text-[10px] text-center">Library</div>
             </div>
