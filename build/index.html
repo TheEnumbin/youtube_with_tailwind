@@ -1,310 +1,368 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/main.js" defer></script>
     <title>Youtube Project</title>
-</head>
-<body class="flex flex-col">
+  </head>
+  <body class="flex flex-col">
     <div>
-        <header id="header" class="flex flex-col sm:flex-row items-center justify-between pt-2 pb-2">
-            <div class="flex flex-row items-center">
-                <img class="h-6 ml-6 mr-6" src="icons/hamburger-menu.svg">
-                <img class="h-5" src="icons/youtube-logo.svg">
-            </div>
-            <div class="w-[350px] lg:w-[500px] md:w-[350px] mt-2 sm:mt-0 flex flex-row justify-center items-center">
-                <input class=" border-zinc-400 border-[1px] flex-1 h-[40px] px-[6px]" placeholder="Search">
-                <button class=" bg-whitesmoke h-[40px] px-[20px] border-zinc-400 border-[1px] mr-[10px] -ml-[1px] relative group flex flex-col items-center justify-center">
-                  <img class="h-[25px]" src="icons/search.svg">
-                  <span class="absolute p-1 bg-zinc-600 text-white text-xs -bottom-[30px] rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Search</span>
-                </button>
-                <button class="rounded-full bg-whitesmoke p-[8px] border-0 flex flex-col items-center justify-center group relative">
-                  <img class="h-6" src="icons/voice-search-icon.svg">
-                  <span class="absolute p-1 bg-zinc-600 text-white text-xs -bottom-[30px] rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Search  with your voice</span>
-                </button>
-            </div>
+      <header
+        id="header"
+        class="flex flex-col sm:flex-row items-center justify-between pt-2 pb-2"
+      >
+        <div class="flex flex-row items-center">
+          <img class="h-6 ml-6 mr-6" src="icons/hamburger-menu.svg" />
+          <img class="h-5" src="icons/youtube-logo.svg" />
+        </div>
+        <div
+          class="w-[350px] lg:w-[500px] md:w-[350px] mt-2 sm:mt-0 flex flex-row justify-center items-center"
+        >
+          <input
+            class="border-zinc-400 border-[1px] flex-1 h-[40px] px-[6px]"
+            placeholder="Search"
+          />
+          <button
+            class="bg-whitesmoke h-[40px] px-[20px] border-zinc-400 border-[1px] mr-[10px] -ml-[1px] relative group flex flex-col items-center justify-center"
+          >
+            <img class="h-[25px]" src="icons/search.svg" />
+            <span
+              class="absolute p-1 bg-zinc-600 text-white text-xs -bottom-[30px] rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap"
+              >Search</span
+            >
+          </button>
+          <button
+            class="rounded-full bg-whitesmoke p-[8px] border-0 flex flex-col items-center justify-center group relative"
+          >
+            <img class="h-6" src="icons/voice-search-icon.svg" />
+            <span
+              class="absolute p-1 bg-zinc-600 text-white text-xs -bottom-[30px] rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap"
+              >Search with your voice</span
+            >
+          </button>
+        </div>
 
-            <div class="flex items-center justify-between w-[180px] mr-5  mt-2 sm:mt-0 ">
-                <img class="h-6" src="icons/upload.svg">
-                <img class="h-6" src="icons/youtube-apps.svg">
-                <img class="h-6" src="icons/notifications.svg">
-                <img class="h-8" src="images/my-channel.jpeg">
-            </div>
-        </header>
+        <div
+          class="flex items-center justify-between w-[180px] mr-5 mt-2 sm:mt-0"
+        >
+          <img class="h-6" src="icons/upload.svg" />
+          <img class="h-6" src="icons/youtube-apps.svg" />
+          <img class="h-6" src="icons/notifications.svg" />
+          <img class="h-8" src="images/my-channel.jpeg" />
+        </div>
+      </header>
     </div>
 
-    <div class="flex flex-row ">
-        <div class="w-[72px]">
-            <div class="h-[74px] flex flex-col justify-center items-center hover:bg-zinc-300 cursor-pointer">
-              <img class="h-6 mb-1" class="h-6 mb-1" src="icons/home.svg">
-              <div class="text-[10px] text-center">Home</div>
-            </div>
-            <div class="flex flex-col justify-center items-center h-[74px]  hover:bg-zinc-300 cursor-pointer">
-              <img class="h-6 mb-1" src="icons/explore.svg">
-              <div class="text-[10px] text-center">Explore</div>
-            </div>
-            <div class="flex flex-col justify-center items-center h-[74px]  hover:bg-zinc-300 cursor-pointer">
-              <img class="h-6 mb-1" src="icons/subscriptions.svg">
-              <div class="text-[10px] text-center">Subscriptions</div>
-            </div>
-            <div class="flex flex-col justify-center items-center h-[74px]  hover:bg-zinc-300 cursor-pointer">
-              <img class="h-6 mb-1" src="icons/originals.svg">
-              <div class="text-[10px] text-center">Originals</div>
-            </div>
-            <div class="flex flex-col justify-center items-center h-[74px]  hover:bg-zinc-300 cursor-pointer">
-              <img class="h-6 mb-1" src="icons/youtube-music.svg">
-              <div class="text-[10px] text-center">YouTube Music</div>
-            </div>
-            <div class="flex flex-col justify-center items-center h-[74px]  hover:bg-zinc-300 cursor-pointer">
-              <img class="h-6 mb-1" src="icons/library.svg">
-              <div class="text-[10px] text-center">Library</div>
-            </div>
+    <div class="flex flex-row">
+      <div class="w-[72px]">
+        <div
+          class="h-[74px] flex flex-col justify-center items-center hover:bg-zinc-300 cursor-pointer"
+        >
+          <img class="h-6 mb-1" class="h-6 mb-1" src="icons/home.svg" />
+          <div class="text-[10px] text-center">Home</div>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-10 py-6 px-7 flex-1 bg-whitesmoke border-t-zinc-200 border-t-[1px]">
-
-            <div class="inline-block">
-                <div class="relative mb-2">
-                    <img class="w-[100%]" src="images/thumbnail-1.webp">
-                    <div class="text-xs font-medium rounded absolute bottom-1 right-[5px] p-1 bg-black text-white">10.22</div>
-                </div>
-                <div class="flex flex-row items-start">
-                    <div class="relative group">
-                        <img class="rounded-full w-[50px] h-[50px]" src="images/channel-1.jpeg">
-                        <div class="absolute flex flex-row w-52 bg-white rounded p-3 top-[55px] opacity-0 transition-opacity duration-[0.5s] group-hover:opacity-100 z-[200]">
-                          <img class="rounded-full w-[50px] h-[50px] mr-2" src="images/channel-1.jpeg">
-                          <div class="">
-                              <p class="text-[14px] mb-2 font-medium">
-                                  Marques Brownlee
-                              </p>
-                              <p class="text-xs text-zinc-500 mb-2 ">
-                                  15m Subscribers
-                              </p>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="flex-1 ml-[14px]">
-                        <p class="text-base leading-6 font-medium mb-[10px] mt-0">
-                          Talking Tech and AI with Google CEO Sundar Pichai!
-                        </p>
-                        <p class="text-xs text-gray-600 mb-1">
-                          Marques Brownlee
-                        </p>
-                        <p class="text-xs text-gray-600 ">
-                          3.4M views · 6 months ago
-                        </p>
-                    </div>
-                </div>
+        <div
+          class="flex flex-col justify-center items-center h-[74px] hover:bg-zinc-300 cursor-pointer"
+        >
+          <img class="h-6 mb-1" src="icons/explore.svg" />
+          <div class="text-[10px] text-center">Explore</div>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center h-[74px] hover:bg-zinc-300 cursor-pointer"
+        >
+          <img class="h-6 mb-1" src="icons/subscriptions.svg" />
+          <div class="text-[10px] text-center">Subscriptions</div>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center h-[74px] hover:bg-zinc-300 cursor-pointer"
+        >
+          <img class="h-6 mb-1" src="icons/originals.svg" />
+          <div class="text-[10px] text-center">Originals</div>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center h-[74px] hover:bg-zinc-300 cursor-pointer"
+        >
+          <img class="h-6 mb-1" src="icons/youtube-music.svg" />
+          <div class="text-[10px] text-center">YouTube Music</div>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center h-[74px] hover:bg-zinc-300 cursor-pointer"
+        >
+          <img class="h-6 mb-1" src="icons/library.svg" />
+          <div class="text-[10px] text-center">Library</div>
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-10 py-6 px-7 flex-1 bg-whitesmoke border-t-zinc-200 border-t-[1px]"
+      >
+        <div class="inline-block">
+          <div class="relative mb-2">
+            <img class="w-[100%]" src="images/thumbnail-1.webp" />
+            <div
+              class="text-xs font-medium rounded absolute bottom-1 right-[5px] p-1 bg-black text-white"
+            >
+              10.22
             </div>
-
-            <div class="inline-block">
-              <div class="relative mb-2">
-                  <img class="w-[100%]" src="images/thumbnail-1.webp">
-                  <div class="text-xs font-medium rounded absolute bottom-1 right-[5px] p-1 bg-black text-white">10.22</div>
-              </div>
-              <div class="flex flex-row items-start">
-                  <div class="relative group">
-                      <img class="rounded-full w-[50px] h-[50px]" src="images/channel-1.jpeg">
-                      <div class="absolute flex flex-row w-52 bg-white rounded p-3 top-[55px] opacity-0 transition-opacity duration-[0.5s] group-hover:opacity-100 z-[200]">
-                        <img class="rounded-full w-[50px] h-[50px] mr-2" src="images/channel-1.jpeg">
-                        <div class="">
-                            <p class="text-[14px] mb-2 font-medium">
-                                Marques Brownlee
-                            </p>
-                            <p class="text-xs text-zinc-500 mb-2 ">
-                                15m Subscribers
-                            </p>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="flex-1 ml-[14px]">
-                      <p class="text-base leading-6 font-medium mb-[10px] mt-0">
-                        Talking Tech and AI with Google CEO Sundar Pichai!
-                      </p>
-                      <p class="text-xs text-gray-600 mb-1">
-                        Marques Brownlee
-                      </p>
-                      <p class="text-xs text-gray-600 ">
-                        3.4M views · 6 months ago
-                      </p>
-                  </div>
-              </div>
           </div>
-
-          <div class="inline-block">
-            <div class="relative mb-2">
-                <img class="w-[100%]" src="images/thumbnail-1.webp">
-                <div class="text-xs font-medium rounded absolute bottom-1 right-[5px] p-1 bg-black text-white">10.22</div>
-            </div>
-            <div class="flex flex-row items-start">
-                <div class="relative group">
-                    <img class="rounded-full w-[50px] h-[50px]" src="images/channel-1.jpeg">
-                    <div class="absolute flex flex-row w-52 bg-white rounded p-3 top-[55px] opacity-0 transition-opacity duration-[0.5s] group-hover:opacity-100 z-[200]">
-                      <img class="rounded-full w-[50px] h-[50px] mr-2" src="images/channel-1.jpeg">
-                      <div class="">
-                          <p class="text-[14px] mb-2 font-medium">
-                              Marques Brownlee
-                          </p>
-                          <p class="text-xs text-zinc-500 mb-2 ">
-                              15m Subscribers
-                          </p>
-                      </div>
-                    </div>
+          <div class="flex flex-row items-start">
+            <div class="relative group">
+              <img
+                class="rounded-full w-[50px] h-[50px]"
+                src="images/channel-1.jpeg"
+              />
+              <div
+                class="absolute flex flex-row w-52 bg-white rounded p-3 top-[55px] opacity-0 transition-opacity duration-[0.5s] group-hover:opacity-100 z-[200]"
+              >
+                <img
+                  class="rounded-full w-[50px] h-[50px] mr-2"
+                  src="images/channel-1.jpeg"
+                />
+                <div class="">
+                  <p class="text-[14px] mb-2 font-medium">Marques Brownlee</p>
+                  <p class="text-xs text-zinc-500 mb-2">15m Subscribers</p>
                 </div>
-                <div class="flex-1 ml-[14px]">
-                    <p class="text-base leading-6 font-medium mb-[10px] mt-0">
-                      Talking Tech and AI with Google CEO Sundar Pichai!
-                    </p>
-                    <p class="text-xs text-gray-600 mb-1">
-                      Marques Brownlee
-                    </p>
-                    <p class="text-xs text-gray-600 ">
-                      3.4M views · 6 months ago
-                    </p>
-                </div>
+              </div>
             </div>
+            <div class="flex-1 ml-[14px]">
+              <p class="text-base leading-6 font-medium mb-[10px] mt-0">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="text-xs text-gray-600 mb-1">Marques Brownlee</p>
+              <p class="text-xs text-gray-600">3.4M views · 6 months ago</p>
+            </div>
+          </div>
         </div>
 
         <div class="inline-block">
           <div class="relative mb-2">
-              <img class="w-[100%]" src="images/thumbnail-1.webp">
-              <div class="text-xs font-medium rounded absolute bottom-1 right-[5px] p-1 bg-black text-white">10.22</div>
+            <img class="w-[100%]" src="images/thumbnail-1.webp" />
+            <div
+              class="text-xs font-medium rounded absolute bottom-1 right-[5px] p-1 bg-black text-white"
+            >
+              10.22
+            </div>
           </div>
           <div class="flex flex-row items-start">
-              <div class="relative group">
-                  <img class="rounded-full w-[50px] h-[50px]" src="images/channel-1.jpeg">
-                  <div class="absolute flex flex-row w-52 bg-white rounded p-3 top-[55px] opacity-0 transition-opacity duration-[0.5s] group-hover:opacity-100 z-[200]">
-                    <img class="rounded-full w-[50px] h-[50px] mr-2" src="images/channel-1.jpeg">
-                    <div class="">
-                        <p class="text-[14px] mb-2 font-medium">
-                            Marques Brownlee
-                        </p>
-                        <p class="text-xs text-zinc-500 mb-2 ">
-                            15m Subscribers
-                        </p>
-                    </div>
-                  </div>
-              </div>
-              <div class="flex-1 ml-[14px]">
-                  <p class="text-base leading-6 font-medium mb-[10px] mt-0">
-                    Talking Tech and AI with Google CEO Sundar Pichai!
-                  </p>
-                  <p class="text-xs text-gray-600 mb-1">
-                    Marques Brownlee
-                  </p>
-                  <p class="text-xs text-gray-600 ">
-                    3.4M views · 6 months ago
-                  </p>
-              </div>
-          </div>
-      </div>
-
-      <div class="inline-block">
-        <div class="relative mb-2">
-            <img class="w-[100%]" src="images/thumbnail-1.webp">
-            <div class="text-xs font-medium rounded absolute bottom-1 right-[5px] p-1 bg-black text-white">10.22</div>
-        </div>
-        <div class="flex flex-row items-start">
             <div class="relative group">
-                <img class="rounded-full w-[50px] h-[50px]" src="images/channel-1.jpeg">
-                <div class="absolute flex flex-row w-52 bg-white rounded p-3 top-[55px] opacity-0 transition-opacity duration-[0.5s] group-hover:opacity-100 z-[200]">
-                  <img class="rounded-full w-[50px] h-[50px] mr-2" src="images/channel-1.jpeg">
-                  <div class="">
-                      <p class="text-[14px] mb-2 font-medium">
-                          Marques Brownlee
-                      </p>
-                      <p class="text-xs text-zinc-500 mb-2 ">
-                          15m Subscribers
-                      </p>
-                  </div>
+              <img
+                class="rounded-full w-[50px] h-[50px]"
+                src="images/channel-1.jpeg"
+              />
+              <div
+                class="absolute flex flex-row w-52 bg-white rounded p-3 top-[55px] opacity-0 transition-opacity duration-[0.5s] group-hover:opacity-100 z-[200]"
+              >
+                <img
+                  class="rounded-full w-[50px] h-[50px] mr-2"
+                  src="images/channel-1.jpeg"
+                />
+                <div class="">
+                  <p class="text-[14px] mb-2 font-medium">Marques Brownlee</p>
+                  <p class="text-xs text-zinc-500 mb-2">15m Subscribers</p>
                 </div>
+              </div>
             </div>
             <div class="flex-1 ml-[14px]">
-                <p class="text-base leading-6 font-medium mb-[10px] mt-0">
-                  Talking Tech and AI with Google CEO Sundar Pichai!
-                </p>
-                <p class="text-xs text-gray-600 mb-1">
-                  Marques Brownlee
-                </p>
-                <p class="text-xs text-gray-600 ">
-                  3.4M views · 6 months ago
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="inline-block">
-      <div class="relative mb-2">
-          <img class="w-[100%]" src="images/thumbnail-1.webp">
-          <div class="text-xs font-medium rounded absolute bottom-1 right-[5px] p-1 bg-black text-white">10.22</div>
-      </div>
-      <div class="flex flex-row items-start">
-          <div class="relative group">
-              <img class="rounded-full w-[50px] h-[50px]" src="images/channel-1.jpeg">
-              <div class="absolute flex flex-row w-52 bg-white rounded p-3 top-[55px] opacity-0 transition-opacity duration-[0.5s] group-hover:opacity-100 z-[200]">
-                <img class="rounded-full w-[50px] h-[50px] mr-2" src="images/channel-1.jpeg">
-                <div class="">
-                    <p class="text-[14px] mb-2 font-medium">
-                        Marques Brownlee
-                    </p>
-                    <p class="text-xs text-zinc-500 mb-2 ">
-                        15m Subscribers
-                    </p>
-                </div>
-              </div>
-          </div>
-          <div class="flex-1 ml-[14px]">
               <p class="text-base leading-6 font-medium mb-[10px] mt-0">
                 Talking Tech and AI with Google CEO Sundar Pichai!
               </p>
-              <p class="text-xs text-gray-600 mb-1">
-                Marques Brownlee
-              </p>
-              <p class="text-xs text-gray-600 ">
-                3.4M views · 6 months ago
-              </p>
+              <p class="text-xs text-gray-600 mb-1">Marques Brownlee</p>
+              <p class="text-xs text-gray-600">3.4M views · 6 months ago</p>
+            </div>
           </div>
-      </div>
-  </div>
+        </div>
 
-  <div class="inline-block">
-    <div class="relative mb-2">
-        <img class="w-[100%]" src="images/thumbnail-1.webp">
-        <div class="text-xs font-medium rounded absolute bottom-1 right-[5px] p-1 bg-black text-white">10.22</div>
-    </div>
-    <div class="flex flex-row items-start">
-        <div class="relative group">
-            <img class="rounded-full w-[50px] h-[50px]" src="images/channel-1.jpeg">
-            <div class="absolute flex flex-row w-52 bg-white rounded p-3 top-[55px] opacity-0 transition-opacity duration-[0.5s] group-hover:opacity-100 z-[200]">
-              <img class="rounded-full w-[50px] h-[50px] mr-2" src="images/channel-1.jpeg">
-              <div class="">
-                  <p class="text-[14px] mb-2 font-medium">
-                      Marques Brownlee
-                  </p>
-                  <p class="text-xs text-zinc-500 mb-2 ">
-                      15m Subscribers
-                  </p>
+        <div class="inline-block">
+          <div class="relative mb-2">
+            <img class="w-[100%]" src="images/thumbnail-1.webp" />
+            <div
+              class="text-xs font-medium rounded absolute bottom-1 right-[5px] p-1 bg-black text-white"
+            >
+              10.22
+            </div>
+          </div>
+          <div class="flex flex-row items-start">
+            <div class="relative group">
+              <img
+                class="rounded-full w-[50px] h-[50px]"
+                src="images/channel-1.jpeg"
+              />
+              <div
+                class="absolute flex flex-row w-52 bg-white rounded p-3 top-[55px] opacity-0 transition-opacity duration-[0.5s] group-hover:opacity-100 z-[200]"
+              >
+                <img
+                  class="rounded-full w-[50px] h-[50px] mr-2"
+                  src="images/channel-1.jpeg"
+                />
+                <div class="">
+                  <p class="text-[14px] mb-2 font-medium">Marques Brownlee</p>
+                  <p class="text-xs text-zinc-500 mb-2">15m Subscribers</p>
+                </div>
               </div>
             </div>
+            <div class="flex-1 ml-[14px]">
+              <p class="text-base leading-6 font-medium mb-[10px] mt-0">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="text-xs text-gray-600 mb-1">Marques Brownlee</p>
+              <p class="text-xs text-gray-600">3.4M views · 6 months ago</p>
+            </div>
+          </div>
         </div>
-        <div class="flex-1 ml-[14px]">
-            <p class="text-base leading-6 font-medium mb-[10px] mt-0">
-              Talking Tech and AI with Google CEO Sundar Pichai!
-            </p>
-            <p class="text-xs text-gray-600 mb-1">
-              Marques Brownlee
-            </p>
-            <p class="text-xs text-gray-600 ">
-              3.4M views · 6 months ago
-            </p>
-        </div>
-    </div>
-</div>
 
-    
-    
+        <div class="inline-block">
+          <div class="relative mb-2">
+            <img class="w-[100%]" src="images/thumbnail-1.webp" />
+            <div
+              class="text-xs font-medium rounded absolute bottom-1 right-[5px] p-1 bg-black text-white"
+            >
+              10.22
+            </div>
+          </div>
+          <div class="flex flex-row items-start">
+            <div class="relative group">
+              <img
+                class="rounded-full w-[50px] h-[50px]"
+                src="images/channel-1.jpeg"
+              />
+              <div
+                class="absolute flex flex-row w-52 bg-white rounded p-3 top-[55px] opacity-0 transition-opacity duration-[0.5s] group-hover:opacity-100 z-[200]"
+              >
+                <img
+                  class="rounded-full w-[50px] h-[50px] mr-2"
+                  src="images/channel-1.jpeg"
+                />
+                <div class="">
+                  <p class="text-[14px] mb-2 font-medium">Marques Brownlee</p>
+                  <p class="text-xs text-zinc-500 mb-2">15m Subscribers</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 ml-[14px]">
+              <p class="text-base leading-6 font-medium mb-[10px] mt-0">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="text-xs text-gray-600 mb-1">Marques Brownlee</p>
+              <p class="text-xs text-gray-600">3.4M views · 6 months ago</p>
+            </div>
+          </div>
         </div>
+
+        <div class="inline-block">
+          <div class="relative mb-2">
+            <img class="w-[100%]" src="images/thumbnail-1.webp" />
+            <div
+              class="text-xs font-medium rounded absolute bottom-1 right-[5px] p-1 bg-black text-white"
+            >
+              10.22
+            </div>
+          </div>
+          <div class="flex flex-row items-start">
+            <div class="relative group">
+              <img
+                class="rounded-full w-[50px] h-[50px]"
+                src="images/channel-1.jpeg"
+              />
+              <div
+                class="absolute flex flex-row w-52 bg-white rounded p-3 top-[55px] opacity-0 transition-opacity duration-[0.5s] group-hover:opacity-100 z-[200]"
+              >
+                <img
+                  class="rounded-full w-[50px] h-[50px] mr-2"
+                  src="images/channel-1.jpeg"
+                />
+                <div class="">
+                  <p class="text-[14px] mb-2 font-medium">Marques Brownlee</p>
+                  <p class="text-xs text-zinc-500 mb-2">15m Subscribers</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 ml-[14px]">
+              <p class="text-base leading-6 font-medium mb-[10px] mt-0">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="text-xs text-gray-600 mb-1">Marques Brownlee</p>
+              <p class="text-xs text-gray-600">3.4M views · 6 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="inline-block">
+          <div class="relative mb-2">
+            <img class="w-[100%]" src="images/thumbnail-1.webp" />
+            <div
+              class="text-xs font-medium rounded absolute bottom-1 right-[5px] p-1 bg-black text-white"
+            >
+              10.22
+            </div>
+          </div>
+          <div class="flex flex-row items-start">
+            <div class="relative group">
+              <img
+                class="rounded-full w-[50px] h-[50px]"
+                src="images/channel-1.jpeg"
+              />
+              <div
+                class="absolute flex flex-row w-52 bg-white rounded p-3 top-[55px] opacity-0 transition-opacity duration-[0.5s] group-hover:opacity-100 z-[200]"
+              >
+                <img
+                  class="rounded-full w-[50px] h-[50px] mr-2"
+                  src="images/channel-1.jpeg"
+                />
+                <div class="">
+                  <p class="text-[14px] mb-2 font-medium">Marques Brownlee</p>
+                  <p class="text-xs text-zinc-500 mb-2">15m Subscribers</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 ml-[14px]">
+              <p class="text-base leading-6 font-medium mb-[10px] mt-0">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="text-xs text-gray-600 mb-1">Marques Brownlee</p>
+              <p class="text-xs text-gray-600">3.4M views · 6 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="inline-block">
+          <div class="relative mb-2">
+            <img class="w-[100%]" src="images/thumbnail-1.webp" />
+            <div
+              class="text-xs font-medium rounded absolute bottom-1 right-[5px] p-1 bg-black text-white"
+            >
+              10.22
+            </div>
+          </div>
+          <div class="flex flex-row items-start">
+            <div class="relative group">
+              <img
+                class="rounded-full w-[50px] h-[50px]"
+                src="images/channel-1.jpeg"
+              />
+              <div
+                class="absolute flex flex-row w-52 bg-white rounded p-3 top-[55px] opacity-0 transition-opacity duration-[0.5s] group-hover:opacity-100 z-[200]"
+              >
+                <img
+                  class="rounded-full w-[50px] h-[50px] mr-2"
+                  src="images/channel-1.jpeg"
+                />
+                <div class="">
+                  <p class="text-[14px] mb-2 font-medium">Marques Brownlee</p>
+                  <p class="text-xs text-zinc-500 mb-2">15m Subscribers</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 ml-[14px]">
+              <p class="text-base leading-6 font-medium mb-[10px] mt-0">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="text-xs text-gray-600 mb-1">Marques Brownlee</p>
+              <p class="text-xs text-gray-600">3.4M views · 6 months ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
